@@ -38,6 +38,10 @@ snippet eif
 	elsif (${1}) {
 		${0}
 	}
+snippet else
+	else {
+		${0}
+	}
 # Conditional One-line
 snippet xif
 	${1:expression} if ${2:condition};
@@ -357,3 +361,14 @@ snippet subtest
 	subtest '${1: test_name}' => sub {
 		${2}
 	};
+
+snippet "
+	"${1}"
+snippet '
+	'${1}'
+snippet pr
+	print "${1}\n";
+snippet dpr
+	use Data::Dumper; print Dumper(${1}); exit 1;
+snippet da
+	__DATA__
