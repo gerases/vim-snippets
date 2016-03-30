@@ -373,10 +373,12 @@ snippet "
 	"${1}"
 snippet '
 	'${1}'
+snippet ex
+	warn "Debug exit..."; exit 1;
 snippet pr
-	print "${1:sergei}\n";
+	warn "${1:sergei}\n";
 snippet dpr
-	use Data::Dumper; print Dumper(${1}); exit 1;
+	use Data::Dumper; print Dumper(${1}); warn "END OF DEBUG"; exit 1;
 snippet da
 	__DATA__
 # setter method
