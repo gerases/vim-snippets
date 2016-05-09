@@ -112,6 +112,9 @@ snippet moose
 	${1:#}BEGIN {extends '${2:ParentClass}'};
 
 	${0}
+# end moose
+snippet emoose
+	__PACKAGE__->meta->make_immutable;
 # parent
 snippet parent
 	use parent qw(${0:Parent Class});
